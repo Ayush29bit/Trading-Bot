@@ -11,17 +11,14 @@ class ValidationError(Exception):
     """Custom exception for validation errors."""
     pass
 
-
 def validate_symbol(symbol: str) -> str:
     """
     Validate trading symbol format.
     
     Args:
-        symbol: Trading pair symbol (e.g., BTCUSDT)
-        
+        symbol: Trading pair symbol (e.g., BTCUSDT)        
     Returns:
-        Uppercase symbol
-        
+        Uppercase symbol        
     Raises:
         ValidationError: If symbol format is invalid
     """
@@ -30,7 +27,6 @@ def validate_symbol(symbol: str) -> str:
     
     symbol = symbol.upper().strip()
     
-    # Basic validation - should end with USDT for USDT-M futures
     if not symbol.endswith("USDT"):
         logger.warning(f"Symbol {symbol} doesn't end with USDT. This might fail on Binance Futures.")
     
@@ -40,14 +36,11 @@ def validate_symbol(symbol: str) -> str:
 
 def validate_side(side: str) -> str:
     """
-    Validate order side.
-    
+    Validate order side.    
     Args:
-        side: Order side (BUY or SELL)
-        
+        side: Order side (BUY or SELL)       
     Returns:
-        Uppercase side
-        
+        Uppercase side       
     Raises:
         ValidationError: If side is invalid
     """
@@ -60,17 +53,13 @@ def validate_side(side: str) -> str:
     logger.debug(f"Validated side: {side}")
     return side
 
-
 def validate_order_type(order_type: str) -> str:
     """
     Validate order type.
-    
     Args:
-        order_type: Type of order (MARKET or LIMIT)
-        
+        order_type: Type of order (MARKET or LIMIT)       
     Returns:
-        Uppercase order type
-        
+        Uppercase order type        
     Raises:
         ValidationError: If order type is invalid
     """
