@@ -6,6 +6,7 @@ from bot.logging_config import get_logger
 
 logger = get_logger(__name__)
 
+
 class ValidationError(Exception):
     """Custom exception for validation errors."""
     pass
