@@ -59,7 +59,7 @@ class BinanceClient:
         """Test connection to Binance API."""
         try:
             account = self.client.futures_account()
-            logger.info(f"✓ Connection test successful. Account balance: {account.get('totalWalletBalance', 'N/A')} USDT")
+            logger.info(f"Connection test successful. Account balance: {account.get('totalWalletBalance', 'N/A')} USDT")
         except BinanceAPIException as e:
             logger.error(f"API Error during connection test: {e.message}")
             raise
