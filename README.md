@@ -1,21 +1,9 @@
 
-# 🤖 Binance Futures Trading Bot
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
+# Binance Futures Trading Bot
 
 **A professional Python CLI trading bot for Binance Futures Testnet**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Documentation](#-documentation) • [Examples](#-examples)
-
-</div>
-
----
-
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
@@ -30,49 +18,38 @@
 - [Error Handling](#-error-handling)
 - [Testing](#-testing)
 - [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
+---
+
+##  Overview
+
+This is a simplified trading bot built for Binance Futures Testnet (USDT-M). It provides a clean, professional command-line interface for placing MARKET and LIMIT orders with comprehensive validation, error handling, and logging.
 
 ---
 
-## 🎯 Overview
-
-This is a **simplified trading bot** built for Binance Futures Testnet (USDT-M) as part of a Python Developer internship application. It provides a clean, professional command-line interface for placing MARKET and LIMIT orders with comprehensive validation, error handling, and logging.
-
-### Why This Project?
-
-- 🎓 **Educational**: Learn futures trading concepts and API integration
-- 🔒 **Safe**: Uses testnet with fake money - no real trading risk
-- 🏗️ **Well-Architected**: Modular design following best practices
-- 📝 **Professional**: Production-quality code with full documentation
-- 🎨 **User-Friendly**: Beautiful CLI with colored output and clear messages
-
----
-
-## ✨ Features
+##  Features
 
 ### Core Functionality
-- ✅ **Order Types**: MARKET and LIMIT orders
-- ✅ **Order Sides**: BUY and SELL support
-- ✅ **Input Validation**: Comprehensive validation before API calls
-- ✅ **Error Handling**: Multi-level error handling with clear messages
-- ✅ **Logging**: Detailed file logging + console output
-- ✅ **Balance Checking**: View account balance
+-  **Order Types**: MARKET and LIMIT orders
+-  **Order Sides**: BUY and SELL support
+-  **Input Validation**: Comprehensive validation before API calls
+-  **Error Handling**: Multi-level error handling with clear messages
+-  **Logging**: Detailed file logging + console output
+-  **Balance Checking**: View account balance
 
 ### Technical Highlights
-- 🏛️ **Modular Architecture**: Separated concerns (client, orders, validation, CLI)
-- 🎨 **Rich CLI**: Beautiful terminal interface with colors and tables
-- 🔐 **Security**: Environment variables for API credentials
-- 📊 **Comprehensive Logging**: Timestamped logs for debugging and auditing
-- 🛡️ **Robust Validation**: Type checking, range validation, business rules
-- 🔄 **Exception Handling**: Graceful handling of API, network, and user errors
+-  **Modular Architecture**: Separated concerns (client, orders, validation, CLI)
+-  **Rich CLI**: Beautiful terminal interface with colors and tables
+-  **Security**: Environment variables for API credentials
+-  **Comprehensive Logging**: Timestamped logs for debugging and auditing
+-  **Robust Validation**: Type checking, range validation, business rules
+-  **Exception Handling**: Graceful handling of API, network, and user errors
 
 ### User Experience
-- 🌈 Colored, formatted terminal output
-- 📋 Clear order summaries before execution
-- ✓ Success/failure indicators
-- 📝 Detailed log file references
-- 🚨 User-friendly error messages
+-  Colored, formatted terminal output
+-  Clear order summaries before execution
+-  Success/failure indicators
+-  Detailed log file references
+-  User-friendly error messages
 
 ---
 
