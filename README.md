@@ -15,8 +15,6 @@
 - [Examples](#-examples)
 - [Logging](#-logging)
 - [Error Handling](#-error-handling)
-- [Testing](#-testing)
-- [Troubleshooting](#-troubleshooting)
 ---
 
 ##  Overview
