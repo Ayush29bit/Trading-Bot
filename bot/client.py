@@ -4,7 +4,7 @@ Handles API communication.
 """
 import os
 from binance.client import Client
-from binance.exceptions import BinanceAPIException, BinanceRequestException
+from binance.exceptions import BinanceAPIException
 from dotenv import load_dotenv
 from bot.logging_config import get_logger
 
