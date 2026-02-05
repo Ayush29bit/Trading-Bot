@@ -78,19 +78,19 @@ class OrderManager:
                 )
             
             self._log_order_response(response)
-            logger.info("✓ MARKET order placed successfully!")
+            logger.info("MARKET order placed successfully!")
             
             return response
             
         except BinanceAPIException as e:
-            logger.error(f"✗ Binance API Error: {e.status_code} - {e.message}")
+            logger.error(f"Binance API Error: {e.status_code} - {e.message}")
             logger.error(f"Full error: {e}")
             raise
         except BinanceRequestException as e:
-            logger.error(f"✗ Binance Request Error: {e}")
+            logger.error(f"Binance Request Error: {e}")
             raise
         except Exception as e:
-            logger.error(f"✗ Unexpected error placing MARKET order: {e}")
+            logger.error(f"Unexpected error placing MARKET order: {e}")
             raise
     
     def place_limit_order(self, symbol: str, side: str, quantity: float, price: float) -> dict:
@@ -120,19 +120,19 @@ class OrderManager:
                 )
             
             self._log_order_response(response)
-            logger.info("✓ LIMIT order placed successfully!")
+            logger.info("LIMIT order placed successfully!")
             
             return response
             
         except BinanceAPIException as e:
-            logger.error(f"✗ Binance API Error: {e.status_code} - {e.message}")
+            logger.error(f"Binance API Error: {e.status_code} - {e.message}")
             logger.error(f"Full error: {e}")
             raise
         except BinanceRequestException as e:
-            logger.error(f"✗ Binance Request Error: {e}")
+            logger.error(f" Binance Request Error: {e}")
             raise
         except Exception as e:
-            logger.error(f"✗ Unexpected error placing LIMIT order: {e}")
+            logger.error(f" Unexpected error placing LIMIT order: {e}")
             raise
     
     def place_order(self, symbol: str, side: str, order_type: str, 
